@@ -10,6 +10,18 @@
 		944D38781F1CAB4F002953A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D38771F1CAB4F002953A3 /* main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		94D973181F5800930085F46D /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		944D38721F1CAB4F002953A3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -25,6 +37,7 @@
 /* Begin PBXFileReference section */
 		944D38741F1CAB4F002953A3 /* CatchTextToPlist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CatchTextToPlist; sourceTree = BUILT_PRODUCTS_DIR; };
 		944D38771F1CAB4F002953A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		94578B221F3C16A800CFD88A /* WeaponsList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WeaponsList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +70,7 @@
 		944D38761F1CAB4F002953A3 /* CatchTextToPlist */ = {
 			isa = PBXGroup;
 			children = (
+				94578B221F3C16A800CFD88A /* WeaponsList.plist */,
 				944D38771F1CAB4F002953A3 /* main.swift */,
 			);
 			path = CatchTextToPlist;
@@ -74,6 +88,7 @@
 				944D38721F1CAB4F002953A3 /* CopyFiles */,
 			);
 			buildRules = (
+				94D973181F5800930085F46D /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -250,6 +265,7 @@
 				944D387D1F1CAB4F002953A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
